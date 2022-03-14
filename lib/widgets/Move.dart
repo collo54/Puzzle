@@ -1,11 +1,9 @@
-
 import 'package:flutter/material.dart';
 
 class Move extends StatelessWidget {
-
   int move;
 
-  Move(this.move);
+  Move(this.move, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,11 +11,8 @@ class Move extends StatelessWidget {
       padding: const EdgeInsets.only(top: 12.0),
       child: Text(
         "Move: ${move}",
-        style: TextStyle(
-            color: Colors.white,
-            decoration: TextDecoration.none,
-            fontSize: 18
-        ),
+        style: const TextStyle(
+            color: Colors.white, decoration: TextDecoration.none, fontSize: 18),
       ),
     );
   }

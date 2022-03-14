@@ -1,16 +1,15 @@
-
 import 'package:flutter/material.dart';
 
 class MyTitle extends StatelessWidget {
   var size;
 
-  MyTitle(this.size);
+  MyTitle(this.size, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
       height: size.height * 0.10,
-      padding: EdgeInsets.all(5.0),
+      padding: const EdgeInsets.all(5.0),
       child: Text(
         "Sliding Puzzle",
         style: TextStyle(
